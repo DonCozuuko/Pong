@@ -1,0 +1,4 @@
+ray: learn_ray.c
+	gcc learn_ray.c -o learn_ray -IC:\raylib\raylib\src -LC:\raylib\raylib\src -lraylib -lopengl32 -lgdi32 -lwinmm
+
+gcc pong.c -o a -IC:\raylib\raylib\src -LC:\raylib\raylib\src -lraylib -lopengl32 -lgdi32 -lwinmm
