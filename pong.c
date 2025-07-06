@@ -6,7 +6,7 @@
 static const int screenWidth = 960;
 static const int screenHeight = 540;
 static const int starting_y_pos_pad = 235;
-static const int score_limit = 2;
+static const int score_limit = 11;
 
 typedef enum Screen { TITLE=0, GAME_START, GAME, GAME_POINT, END } Screen;
 
@@ -139,6 +139,8 @@ int main(void) {
                 case TITLE: {
                     DrawText("PONG BITCH!", 200, screenHeight / 2 - 90, 90, WHITE);
                     DrawText("Press Enter to Play", 275, screenHeight / 2 + 30, 40, WHITE);
+                    DrawText("Player 1 Controls (Left-Side):\na = Up, s = Down", 15, screenHeight / 2 + 150, 20, LIGHTGRAY);
+                    DrawText("Player 2 Controls (Right-Side):\nl = Up, k = Down", 15, screenHeight / 2 + 200, 20, LIGHTGRAY);
                 } break;
                 case GAME_START: {
                     if (count > 0 && count < 21) {
